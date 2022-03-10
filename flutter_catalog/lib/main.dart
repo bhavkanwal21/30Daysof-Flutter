@@ -1,4 +1,4 @@
-import 'dart:html';
+
 
 import 'package:flutter/material.dart';
 import 'package:flutter_catalog/pages/homepage.dart';
@@ -14,13 +14,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // build is a function of statlesswidget class which is overriden by MyApp class
-    double pie = 3.14;
-    bool ismale = true;
-    num temp = 30.5;
+    //double pie = 3.14;
+   // bool ismale = true;
+    //num temp = 30.5;
 
-    var day = "Tuesday"; // var can be used to define any type of variable
-    const pi = 3.14;
-    final piu =
+    //var day = "Tuesday"; // var can be used to define any type of variable
+    //const pi = 3.14;
+    //final piu =
         789; //new values can be added or modified in final but values of const cannot be changed
 
     return MaterialApp(

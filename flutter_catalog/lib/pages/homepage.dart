@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.pinkAccent,
+        //backgroundColor: Colors.pinkAccent,
         title: Text(
           "Yogic Lifestyle",
           textAlign: TextAlign.center,

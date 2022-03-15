@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:flutter_catalog/Utils/routes.dart';
 import 'package:flutter_catalog/pages/homepage.dart';
 import 'package:flutter_catalog/pages/loginpage.dart';
 
@@ -26,6 +27,7 @@ class MyApp extends StatelessWidget {
     789; //new values can be added or modified in final but values of const cannot be changed
 
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       //home: HomePage(),
       themeMode: ThemeMode.dark,
       //theme: ThemeData(primarySwatch: Colors.orange),
@@ -37,8 +39,8 @@ class MyApp extends StatelessWidget {
       routes: {
         "/": (context) =>
             LoginPage(), // LoginPage is a class. "/" sets the default first page ofthe app, provided intail route is not specified
-        "/home": (context) => HomePage(),
-        "/login": (context) => LoginPage()
+        MyRoutes.HomeRoute: (context) => HomePage(),
+        MyRoutes.LoginRoute: (context) => LoginPage()
       },
     );
   }
